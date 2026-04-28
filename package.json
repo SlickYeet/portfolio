@@ -1,0 +1,42 @@
+{
+  "clx2aMetadata": {
+    "initVersion": "0.12.0"
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.11",
+    "drizzle-orm": "^0.45.2",
+    "next": "^16.2.4",
+    "postgres": "^3.4.9",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "drizzle-kit": "^0.31.10",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3"
+  },
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "dev": "next dev",
+    "format": "biome format --write .",
+    "lint": "biome check .",
+    "lint:unsafe": "biome check --write --unsafe .",
+    "lint:write": "biome check --write .",
+    "shadcn": "bunx --bun shadcn@latest",
+    "start": "bun run db:migrate && next start"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

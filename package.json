@@ -34,7 +34,6 @@
     "lint": "biome check .",
     "lint:unsafe": "biome check --write --unsafe .",
     "lint:write": "biome check --write .",
-    "shadcn": "bunx --bun shadcn@latest",
     "start": "bun run db:migrate && next start"
   },
   "type": "module",

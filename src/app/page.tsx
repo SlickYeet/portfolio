@@ -21,7 +21,7 @@ export default function Page() {
 
   return (
     <>
-      <main className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center">
+      <main className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 py-8">
         <div className="text-left">
           <h1 className="font-semibold text-xl">Hi, I'm Lasse!</h1>
           <p className="text-lg text-neutral-400">
@@ -41,9 +41,9 @@ export default function Page() {
                     className="size-5"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
